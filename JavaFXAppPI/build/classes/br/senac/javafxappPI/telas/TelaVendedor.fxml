@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.senac.javafxappPI.telas.TelaVendedorController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="BTUsuario" layoutX="113.0" layoutY="116.0" mnemonicParsing="false" onAction="#UsuarioBT" prefHeight="77.0" prefWidth="168.0" text="Cliente">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="BTProdutos" disable="true" layoutX="320.0" layoutY="211.0" mnemonicParsing="false" onAction="#ProdutosBT" opacity="0.26" prefHeight="77.0" prefWidth="168.0" text="Produtos">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="BTVenda" layoutX="113.0" layoutY="211.0" mnemonicParsing="false" onAction="#VendaBT" prefHeight="77.0" prefWidth="168.0" text="Venda">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="BTRelatorio" disable="true" layoutX="320.0" layoutY="112.0" mnemonicParsing="false" onAction="#RelatorioBT" opacity="0.26" prefHeight="77.0" prefWidth="168.0" text="Relatorio">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Label layoutX="104.0" layoutY="22.0" prefHeight="65.0" prefWidth="395.0" text="Tela de Disponibilização">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="341.0" text="Botões Indisponiveis de acordo com cargo">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="216.0" layoutY="358.0" text="Em caso de duvidas, falar com Gerente">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="261.0" layoutY="77.0" text="Funcionário" textFill="#403c26">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
