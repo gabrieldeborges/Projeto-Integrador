@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="colunaId" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.senac.javafxappPI.telas.TelaRelatorioController">
+   <children>
+      <ChoiceBox fx:id="cbMes" layoutX="210.0" layoutY="57.0" prefWidth="150.0" />
+      <Label layoutX="271.0" layoutY="40.0" text="Mês" />
+      <Button layoutX="237.0" layoutY="106.0" mnemonicParsing="false" onAction="#acaoGerar" text="Gerar Relatorio" />
+      <TableView fx:id="tblRelatorio" layoutX="62.0" layoutY="151.0" prefHeight="145.0" prefWidth="465.0">
+        <columns>
+            <TableColumn fx:id="colunaID" prefWidth="69.0" text="ID Venda" />
+          <TableColumn fx:id="colunaDia" prefWidth="93.0" text="Dia" />
+            <TableColumn fx:id="colunaCpf" prefWidth="63.66668701171875" text="ID Cliente" />
+          <TableColumn fx:id="colunaCliente" prefWidth="131.33331298828125" text="Cliente" />
+            <TableColumn fx:id="colunaTotal" prefWidth="106.0" text="Total Gasto" />
+        </columns>
+      </TableView>
+      <Label layoutX="247.0" layoutY="304.0" text="Total ganho no mes" />
+      <TextField fx:id="totalMes" disable="true" layoutX="211.0" layoutY="334.0" />
+      <Button layoutX="534.0" layoutY="211.0" mnemonicParsing="false" onAction="#acaoDetalhe" text="Detalhes" />
+   </children>
+</AnchorPane>
